@@ -18,5 +18,9 @@ float rootf (float x);
 */
 double rootd(double x);
 
+double rootk(double x, int k);
+
+double power(double x, int k);
+
 /* show immediate results or not */
 void setShowIterations(int flag);

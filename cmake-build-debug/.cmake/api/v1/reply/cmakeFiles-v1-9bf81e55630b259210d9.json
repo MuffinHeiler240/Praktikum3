@@ -21,11 +21,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeMinGWFindMake.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake"
 		},
 		{
@@ -464,8 +459,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/jgreive/CLionProjects/Praktikum3/cmake-build-debug",
-		"source" : "C:/Users/jgreive/CLionProjects/Praktikum3"
+		"build" : "C:/Users/jonat/CLionProjects/Praktikum3/cmake-build-debug",
+		"source" : "C:/Users/jonat/CLionProjects/Praktikum3"
 	},
 	"version" : 
 	{

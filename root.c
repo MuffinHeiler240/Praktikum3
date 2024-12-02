@@ -26,7 +26,7 @@ float rootf (float x) {
 
         /* Ausgabe der Zwischenwerte, falls aktiviert */
         if (showIterations) {
-            printf("double x = %10.2f   k=%4d  ite:%4d    xn:%18.10f    delta:%18.10f\n",x,2,n, xn, delta);
+            printf("float  x = %10.2f   k=%4d  ite:%4d    xn:%18.10f    delta:%18.10f\n",x,2,n, xn, delta);
         }
 
     } while (delta > EPSFLOAT && n < MAX);  /* Abbruchkriterium */

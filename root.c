@@ -19,7 +19,7 @@ float rootf (float x) {
         return 0;
 
     do {
-        float xn1 = (xn + x / xn) / 2.0;   /* Nächste Näherung berechnen */
+        float xn1 = xn-(xn*xn-x)/(2*xn);   /* Nächste Näherung berechnen */
         delta = (xn1 > xn) ? (xn1 - xn) : (xn - xn1);  /* Betrag der Differenz */
         xn = xn1;    /* Update xn für die nächste Iteration */
         n++;
@@ -55,7 +55,7 @@ double rootd (double x) {
         return 0;
 
     do {
-        double xn1 = (xn + x / xn) / 2.0;   /* Nächste Näherung berechnen */
+        double xn1 = xn-(xn*xn-x)/(2*xn);   /* Nächste Näherung berechnen */
         delta = (xn1 > xn) ? (xn1 - xn) : (xn - xn1);  /* Betrag der Differenz */
         xn = xn1;    /* Update xn für die nächste Iteration */
         n++;
@@ -86,7 +86,7 @@ double rootk(double x,int k) {
         return 0;
 
     do {
-        double xn1 = ((k - 1) * xn + x / power(xn, k - 1)) / k;  /* Nächste Näherung berechnen */
+        double xn1 = xn-(power(xn,k)-x)/(k*power(xn,k-1));  /* Nächste Näherung berechnen */
         delta = (xn1 > xn) ? (xn1 - xn) : (xn - xn1);  /* Betrag der Differenz */
         xn = xn1;    /* Update xn für die nächste Iteration */
         n++;
